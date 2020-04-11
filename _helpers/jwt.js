@@ -4,8 +4,7 @@ const config = require('config.json');
 module.exports = jwt;
 
 function jwt(){    
-	const config = process.env.secret || config.secret;
-	const { secret } = config;
+	const secret = process.env.secret || config.secret;	
     return expressJwt({ secret }).unless({
         path: [            
             '/users/authenticate'
