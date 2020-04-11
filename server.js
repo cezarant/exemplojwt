@@ -13,7 +13,7 @@ app.use(jwt());
 app.use('/users', require('./users/users.controller'));
 app.use(errorHandler);
 
-const port = process.env.PORT || 4000;
+const port = process.env.PORT || 3000;
 
 const server = app.listen(port, function () {
     console.log('Servidor escutando em ' + port);
