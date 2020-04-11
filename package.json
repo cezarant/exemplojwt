@@ -1,7 +1,7 @@
 {
     "name": "exemplojwt",
     "version": "1.0.0",
-    "description": "Exemplo jwt",
+    "description": "exemplojwt",
     "scripts": {
         "start": "node server.js"
     },
