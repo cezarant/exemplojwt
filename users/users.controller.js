@@ -15,7 +15,9 @@ function authenticate(req, res, next) {
 }
 
 function getAll(req, res, next) {
-    userService.getAll()
+    console.log(req); 
+	
+	userService.getAll()
         .then(users => res.json(users))
         .catch(err => next(err));
 }
